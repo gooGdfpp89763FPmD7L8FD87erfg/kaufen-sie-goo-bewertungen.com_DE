@@ -559,18 +559,6 @@
         </div>
     </section>
 
-    <section class="testimonials">
-        <div class="container">
-            <h2 class="section-title">Sie haben es versucht und sind geblieben.</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial-card"><img src="echte-google-bewertungen-kaufen.webp" alt="echte google bewertungen kaufen hotel" title="google bewertung verbessern hotel" width="539" height="1025" class="testimonial-img" loading="lazy"></div>
-                <div class="testimonial-card"><img src="google-bewertungen-5-sterne-kaufen.webp" alt="google bewertungen kaufen hotel" title="negative google bewertungen kaufen hotel" width="539" height="1025" class="testimonial-img" loading="lazy"></div>
-                <div class="testimonial-card"><img src="google-bewertung-verbessern.webp" alt="google bewertungen boosten hotel" title="gefälschte google bewertungen hotel" width="539" height="1025" class="testimonial-img" loading="lazy"></div>
-                <div class="testimonial-card"><img src="google-bewertungen-boosten.webp" alt="google bewertungen löschen hotel" title="google bewertungen entfernen hotel" width="539" height="1025" class="testimonial-img" loading="lazy"></div>
-                <div class="testimonial-card"><img src="zuverlaessige-google-bewertungen-kaufen.webp" alt="google bewertungen kaufen hotel" title="google bewertungen kaufen hotel" width="539" height="1025" class="testimonial-img" loading="lazy"></div>
-            </div>
-        </div>
-    </section>
 
     <section class="seo-content">
         <div class="container">
@@ -672,7 +660,7 @@
                 const header = document.querySelector('.header');
                 header.style.boxShadow = window.scrollY > 50 ? '0 4px 20px rgba(0,0,0,0.1)' : '0 4px 15px rgba(0,0,0,0.08)';
             });
-            const animateElements = document.querySelectorAll('.stat-card, .step, .pricing-card, .testimonial-card, .faq-item');
+            const animateElements = document.querySelectorAll('.stat-card, .step, .pricing-card, .faq-item');
             const observer = new IntersectionObserver(function(entries) { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.style.opacity = '1'; entry.target.style.transform = 'translateY(0)'; } }); }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
             animateElements.forEach(el => { el.style.opacity = '0'; el.style.transform = 'translateY(30px)'; el.style.transition = 'opacity 0.6s ease, transform 0.6s ease'; observer.observe(el); });
             let animated = false;
